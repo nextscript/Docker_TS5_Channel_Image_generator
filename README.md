@@ -1,3 +1,6 @@
+# Supported tags
+**latest** [linux/amd64], **arm** [linux/arm]
+
 # Docker_TS5-Channel-Image-Generator
 
 ![Demo2](https://raw.githubusercontent.com/nextscript/TS5-Channel-Image-Generator/master/demo_ch.png)

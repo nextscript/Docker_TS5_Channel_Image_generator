@@ -1,4 +1,4 @@
-# Quick reference
+# Infos
 **Supported architectures:** linux/amd64 ,  linux/arm
 
 # Docker_TS5-Channel-Image-Generator

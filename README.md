@@ -1,5 +1,4 @@
 # Docker_TS5-Channel-Image-Generator
-This is the Dockerfile of the "TS5-Channel-Image-Generator"
 
 ![Demo2](https://raw.githubusercontent.com/nextscript/TS5-Channel-Image-Generator/master/demo_ch.png)
 

@@ -50,7 +50,7 @@ include 'config.php';
 		if($_GET['img'] == ''){
 		}else{
 			if($_GET['sub'] == ''){
-				echo '<table class="table table-striped"><tr style="background-color:#4f5565;"><td>													
+				echo '<table class="table table-striped"><tr style="background-color:#4f5565;"><td>
 							</tr></td><tr style="background-color:#4f5565;"><td>
 								<form class="form-inline" action="?change=true" method="post">
 								<div class="form-group">
@@ -62,7 +62,7 @@ include 'config.php';
 								<option>4</option>
 								</select>
 								</div>
-								
+
 								<button type="submit" name="submit" value="Create" class="btn btn-default">Next</button>
 							</form>
 						</tr></td></table>';
@@ -80,18 +80,18 @@ include 'config.php';
 
 				echo '<a href="?conv='. $start * $i .'" target="_blank"><img src="img.php?i='. $start * $i .'&type=png&sub='.$_GET['sub'].'&img='.$_GET['img'].'"></a><p>';
 			}
-	
+
 		}
 		if($_GET['img'] == ''){
 		}else{
 			if($_GET['sub'] == ''){
 				if($_GET['change'] == 'true'){
 				}else{
-					echo '<table class="table table-striped"><tr style="background-color:#4f5565;"><td>													
+					echo '<table class="table table-striped"><tr style="background-color:#4f5565;"><td>
 							</tr></td><tr style="background-color:#4f5565;"><td>
 								<form class="form-inline" action="?change=true" method="post">
-							   
-								
+
+
 								<div class="form-group">
 								<label for="sub">Sub Channel:<span style="font-size: 18px;"><span style="color: rgb(239, 0, 27); font-size: 18px; font-weight: bold;">*</span></span></label>
 								<select name="sub" class="form-control">
@@ -101,14 +101,14 @@ include 'config.php';
 								<option>4</option>
 								</select>
 								</div>
-								
+
 								<button type="submit" name="submit" value="Create" class="btn btn-default">Change</button>
 							</form>
 						</tr></td></table>';
 				}
 			}else{
 				echo '<table class="table table-striped"><tr style="background-color:#4f5565;"><td></tr></td><tr style="background-color:#4f5565;"><td><form><input type="button" value="Go back!"  class="btn btn-default" onclick="history.back()"></form></tr></td></table>';
-			}			
+			}
 		}
 	}
 
@@ -116,37 +116,37 @@ include 'config.php';
 
 		if($_GET['change'] == 'true'){
 		}else{
-			echo '<table class="table table-striped"><tr style="background-color:#4f5565;"><td>													
+			echo '<table class="table table-striped"><tr style="background-color:#4f5565;"><td>
 							</tr></td><tr style="background-color:#4f5565;"><td>
 								<form class="form-inline" action="?step=2" method="post">
-							   
+
 								<div class="form-group">
 								<label for="channel">How many Channels:<span style="font-size: 18px;"><span style="color: rgb(239, 0, 27); font-size: 18px; font-weight: bold;">*</span></span></label>
 								<input type="text" name="channel" class="form-control">
 								</div>
-								
-								
+
+
 								<button type="submit" name="submit" value="Create" class="btn btn-default">Next</button>
 							</form>
 						</tr></td></table>';
 		}
-						
-						
+
+
 	}else{
 		if($_GET['img'] == ''){
-			echo '<table class="table table-striped"><tr style="background-color:#4f5565;"><td>													
+			echo '<table class="table table-striped"><tr style="background-color:#4f5565;"><td>
 							</tr></td><tr style="background-color:#4f5565;"><td>
 								<form class="form-inline" action="upload.php" method="post" enctype="multipart/form-data">
-							   
-							   
+
+
 							  <div class="form-group">
 									<label for="Banner">Upload Image:<span style="font-size: 18px;"><span style="color: rgb(239, 0, 27); font-size: 18px; font-weight: bold;">*</span></span></label>
 									<input type="file" class="form-control" name="img" id="fileToUpload">
-									
+
 								</div>
 									<button type="submit" name="submit" class="btn btn-default" >Upload</button>
 									<input type="button" value="Go back!"  class="btn btn-default" onclick="history.back()">
-							</form>Size of the Image must be exactly 960 x '. ( 38 * $zahl ).' Pixel and Only PNG format.
+							</form>Size of the Image must be exactly 960 x '. ( 38 * $zahl ).' Pixel and Only PNG & JPG format.
 						</tr></td></table>';
 		}else{
 		}

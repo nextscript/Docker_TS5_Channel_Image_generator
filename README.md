@@ -6,7 +6,7 @@
 ![Demo2](https://raw.githubusercontent.com/nextscript/TS5-Channel-Image-Generator/master/demo_ch.png)
 
 # What does this script do?
-You can upload a picture (ONLY png), the script will create the appropriate snippets for your Teamspeak channels and if you click on them you get the url.
+You can upload a picture (ONLY png & jpg), the script will create the appropriate snippets for your Teamspeak channels and if you click on them you get the url.
 _______________________________________________________________________________
 
 This Script ONLY work for the New Teamspeak Client.

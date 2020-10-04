@@ -18,7 +18,7 @@ switch( $endung ) {
 
 	header("Content-type:". $ctype);
 	if($_GET['sub'] != ''){
-		$submax = 10 * $_GET['sub'];
+		$submax = 20 * $_GET['sub']; //changed new version
 		$view;
 		$image1 = imagecreatetruecolor ( 960, 38 );
 		ImageCopy ( $image1, $image, -$submax, 0, 0, $_GET['i'], 960, 38);

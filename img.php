@@ -21,12 +21,16 @@ switch( $endung ) {
 		$submax = 20 * $_GET['sub']; //changed new version
 		$view;
 		$image1 = imagecreatetruecolor ( 960, 38 );
-		ImageCopy ( $image1, $image, -$submax, 0, 0, $_GET['i'], 960, 38);
+		$blue = imagecolorallocate($image1, 44, 50, 69);  //changed new version
+		ImageCopy ( $image1, $image, -$submax, 0, -142, $_GET['i'], 960, 38); //changed new version (-142)
+		imagefill($image1, 0, 0, $blue); //changed new version
 		imagejpeg( $image1 );
 	}else{
 		$view;
 		$image1 = imagecreatetruecolor ( 960, 38 );
-		ImageCopy ( $image1, $image, 0, 0, 0, $_GET['i'], 960, 38 );
+		$blue = imagecolorallocate($image1, 44, 50, 69); //changed new version
+		ImageCopy ( $image1, $image, 0, 0, -142, $_GET['i'], 960, 38 ); //changed new version (-142)
+		imagefill($image1, 0, 0, $blue); //changed new version
 		imagejpeg( $image1 );
 	}
 ?>
